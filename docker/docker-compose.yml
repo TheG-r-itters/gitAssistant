@@ -1,6 +1,7 @@
 services:
   logger:
-    build: ./Logger
+    image: logger:latest
+    build: ../Logger/docker/
     container_name: gitassistant_logger
     networks:
       intranet:
