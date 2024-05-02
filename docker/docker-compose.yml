@@ -1,0 +1,32 @@
+services:
+  logger:
+    image: logger:latest
+    build: ../Logger/docker/
+    container_name: gitassistant_logger
+    networks:
+      intranet:
+        ipv4_address: 10.0.0.20
+  queue:
+    image: apache/kafka:latest
+    container_name: gitassistant_queue
+    networks:
+      intranet:
+        ipv4_address: 10.0.0.10
+      externet:
+        ipv4_address: 172.20.0.10
+
+
+
+networks:
+  intranet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: "10.0.0.0/24"
+    internal: true
+  externet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: "172.20.0.0/24"
+    internal: false
