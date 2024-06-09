@@ -1,12 +1,12 @@
 <!-- https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors -->
 
-# Contributing to gitAssistant
+# Contributing to GitAssistant
 
 Thank you for considering contributing to gitAssistant! Your help is essential for keeping this project active and up-to-date.
 
 ## Table of Contents
 
-- [Contributing to gitAssistant](#contributing-to-gitassistant)
+- [Contributing to GitAssistant](#contributing-to-gitassistant)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Opening an Issue](#opening-an-issue)
@@ -58,8 +58,9 @@ To create a patch (pull request) for this project, follow these steps:
 5. **Commit Your Changes**:
    ```bash
    git add .
-   git commit -m "Description of your changes"
+   git commit 
    ```
+   (If possible, it's better to sign the commit.)
 6. **Push to Your Fork**:
    ```bash
    git push origin branch-name
